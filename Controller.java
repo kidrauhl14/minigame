@@ -28,7 +28,6 @@ public class Controller implements Initializable{
 
     ArrayList<String> words;
 
-
     public String reversewords[] = {"doof", "eikooc", "elppa", "nep", "olleh", "traeh", "rats", "eseehc", "azzip", "nekcihc"};
 
     TextField input = new TextField();
@@ -47,9 +46,6 @@ public class Controller implements Initializable{
        addWords();
 
         scores = new Label();
-
-        //start.setFont(Font.font("ENDOMCA", 30));
-
         start.setOnMouseClicked(event -> {
             Pane.getChildren().remove(start);
             print.setVisible(true);
@@ -88,8 +84,7 @@ public class Controller implements Initializable{
                     print.setText(reversewords[k++]);
                     iv1.setX(355);
                     Pane.getChildren().add(iv1);
-                    //System.out.print("정답");
-//                    score++;
+ 
                 }
                 else {
                     //System.out.print("오답");
@@ -97,11 +92,6 @@ public class Controller implements Initializable{
                 }
 
                 input.setText("");
-
-//                scores.setText(score*10000+"점");
-
-
-
             }
         });
     }
