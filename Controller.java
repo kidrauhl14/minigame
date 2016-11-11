@@ -113,4 +113,3 @@ public class Controller implements Initializable{
         }
     }
 }
-//점수, 사진위치, bgm, 끝났을때
